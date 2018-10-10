@@ -1,0 +1,66 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+$brownish: rgb(192, 174, 161);
+$blueish: rgb(166, 197, 255);
+$blackish: rgb(34, 41, 36);
+$blackisher: rgb(24, 28, 41);
+$redish: rgb(172, 49, 21);
+$greyish: rgb(230, 238, 255);
+$thatdarkblue: rgb(228, 232, 240);
+$awesomeblue: rgb(0, 20, 56);
+
+$pinkish: rgb(192, 172, 191);
+$greenish: rgb(199, 211, 93);
+$gblackish: rgb(26, 51, 26);
+$gblackisher: rgb(13, 26, 13);
+$mutedred: rgb(153, 66, 61);
+$greyish: #e6eeff;
+
+$alert-yellow: #ebe16f;
+$alert-red: #fbe3e4;
+$alert-green: #e6efc2;
+$alert-blue: #d5edf8;
+
+$black: #323944;
+$white: #fff;
+
+$light-gray: #f8f9fa;
+$gray: $greyish;
+$text-color: $blackish;
+$meta-gray: #9fa6b4;
+
+$tan: #eceee5;
+
+$green: #7dd667;
+
+$bones-pink: #f01d4f;
+$blue: #2980b9;
+
+$link-color: $bones-pink;
+$link-hover: $greyish;
+
+$border-color: #ccc;
+$disabled-gray: #cfcfcf;
+
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/

@@ -1,0 +1,96 @@
+@import "../partials/typography";
+
+$navheight: 45px;
+
+.mainheader {
+  background: rgba(255, 255, 255, 1);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  height: $navheight;
+  z-index: 1050;
+  #inner-header {
+    height: 100%;
+  }
+}
+
+#content{
+  margin-top: $navheight;
+
+}
+
+#logo {
+  float: left;
+  text-align: right;
+  height: 100%;
+  a {
+    margin: 0 0;
+    display: inline-block;
+    height: 100%;
+    padding: 3vw;
+
+    img {
+      max-height: 100%;
+    }
+  }
+}
+
+.mainnav {
+  border-bottom: 0;
+  margin: 0;
+  float: right;
+  height: 100%;
+
+  .top-nav {
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+  }
+
+  li {
+    a {
+      border-bottom: 0;
+      display: inline-block;
+      line-height: $navheight;
+      height: 100%;
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      padding: 0 8px;
+      &:hover, &:focus {
+
+      }
+    }
+
+    ul.sub-menu,
+    ul.children {
+      li {
+        a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+.nav {
+  border: 0;
+
+  li {
+    float: left;
+    height: 100%;
+
+    a {
+      font-size: 0.7em;
+      font-weight: 500;
+
+      &:hover, &:focus, &:active {
+        border-style: none;
+        text-outline: none;
+        text-decoration: none;
+        outline: none;
+      }
+    }
+  }
+}

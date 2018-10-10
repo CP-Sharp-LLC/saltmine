@@ -1,0 +1,134 @@
+.grayer {
+  background-color: rgba(245, 245, 245, 1);
+  transform: scale(1);
+  color: black;
+}
+
+.sm-collapse-up, .sm-collapse-take {
+  .grayer {
+    background-color: rgba(0, 0, 0, 0.65);
+    transform: scale(0.7);
+    transform-origin: bottom left;
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.bright {
+  background-color: rgba(255, 255, 255, .80);
+}
+
+.diamond-hinge {
+  display: none;
+}
+
+@media only screen and (min-width: 1030px) {
+  /*  .diamond-hinge {
+      transform: scale(1);
+      position: relative;
+      left: 9vw;
+      display: block;
+    }*/
+}
+
+.fl-photo-crop-portrait div img {
+  margin-bottom: 0;
+}
+
+.sm-backdrop {
+  position: absolute;
+  z-index: -100;
+  min-height: 100vh;
+  min-width: 100vw;
+  top: 0;
+  filter: brightness(.5);
+  div {
+    height: 100vh;
+  }
+}
+
+.sm-foredrop {
+  z-index: 0;
+  position: relative;
+  min-width: 100vw;
+}
+
+.third-square {
+  max-width: 100vw;
+  height: 50vh;
+}
+
+@media only screen and (min-width: 1030px) {
+  .sm-backdrop {
+    position: relative;
+    z-index: -1;
+    // min-height: 0;
+    min-width: 0;
+    top: auto;
+    filter: brightness(1);
+    div {
+      height: auto;
+    }
+  }
+}
+
+.sm-fill-container {
+  max-height: 100vw;
+  overflow: hidden;
+
+  div div div {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.sm-hide-image {
+  img {
+    display: none;
+  }
+}
+
+.sm-makespace {
+  padding: 6vh 0 0 10vw;
+  img {
+    border: solid 1px rgba(200, 200, 200, 1);
+    border-width: 1px 0 0 1px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  .sm-collapse-up, .sm-collapse-take {
+    .grayer {
+      background-color: rgba(245, 245, 245, 1);
+      transform: scale(1);
+      color: black;
+    }
+  }
+
+  .sm-makespace {
+    padding: 0;
+  }
+
+  .third-square {
+    min-height: 33vw;
+    width: 33vw;
+  }
+
+  .bright {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .sm-foredrop {
+    z-index: auto;
+    position: relative;
+    min-width: auto;;
+  }
+
+  .sm-fill-container {
+    max-height: 70vh;
+  }
+}

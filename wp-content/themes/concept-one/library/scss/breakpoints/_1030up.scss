@@ -1,0 +1,175 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+
+body {
+  font-size: 80%;
+}
+
+.how-list {
+  margin: 10vh 10%;
+  li {
+    .listed {
+      padding-right: 3vw;
+    }
+  }
+}
+
+.nav li a {
+  font-size: 1em;
+}
+
+.wrap {
+  //width: 75%;
+  //width: 75%;
+}
+
+.mainnav {
+  .top-nav {
+    li {
+      a {
+        //line-height: 8vh;
+        margin: auto;
+        height: auto;
+      }
+    }
+  }
+}
+
+h3.component {
+  font-size: 3em;
+}
+
+.thin-sans {
+  font-size: 1.3em;
+  font-weight: 400;
+  &.component-subtext {
+    font-size: 1.5em;
+  }
+}
+
+#logo a {
+  margin: 0 1vw;
+}
+
+.captioned {
+  padding-left: 3vw;
+
+  p {
+    font-size: 1.4em;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+.person {
+  margin-bottom: 10vh;
+}
+
+.person {
+  .captioned {
+    padding-left: 3vw;
+  }
+}
+
+img.diamond {
+  display: block;
+  width: auto;
+}
+
+$annetopmargin: 15vh;
+
+.people-john {
+  float: left;
+  padding-left: 6vw;
+  margin-top: $annetopmargin;
+  padding-top: 20vh;
+
+  .captioned {
+    margin-top: -36px;
+  }
+  .pimg {
+    width: 35vw;
+  }
+}
+
+.people-kelly {
+  float: left;
+  width: 100%;
+
+  .captioned {
+    float: right;
+    width: 80%;
+  }
+
+  .diamond {
+    margin-top: -30px;
+  }
+
+  .pimg {
+    width: 80%;
+    float: right;
+  }
+
+  h2 {
+    clear: both;
+  }
+
+  p {
+    clear: both;
+  }
+}
+
+.people-valerie {
+  float: left;
+  padding-left: 6vw;
+
+  .captioned {
+    margin-top: -36px;
+  }
+  .pimg {
+    min-width: 28vw;
+  }
+}
+
+.people-anne {
+  float: left;
+  width: 50vw;
+
+  .captioned {
+    position: absolute;
+    margin-top: $annetopmargin;
+    margin-left: 50vw;
+    float: left;
+  }
+
+  .pimg {
+    float: left;
+    max-width: 50vw;
+    width: 50vw;
+    height: auto;
+  }
+
+  img.diamond {
+    margin-left: -3vw;
+    position: relative;
+    left: -30px;
+    display: inline;
+    width: auto;
+    float: left;
+  }
+}
+
+.lg-pullleft {
+  margin-left: -20vw;
+}

@@ -1,0 +1,53 @@
+#content {
+  min-height: calc(100vh - 4vh)
+}
+
+#foot {
+  height: 30vh;
+  background: #000 url('../images/sm.newlogo.png') no-repeat center center;
+
+  p {
+    font-size: 1em;
+    line-height: 3vh;
+    margin-top: 0;
+  }
+}
+
+#inner-footer {
+  height: 3vh;
+  text-align: right;
+  letter-spacing: .1em;
+  padding: 27vh 5% 0 5%;
+
+  p{
+    margin: 0;
+    padding: 0;
+  }
+
+  .cpsharplink{
+    line-height: 3vh;
+  }
+}
+
+@keyframes glowy {
+  from {
+    color: #f0e9b4;
+  }
+  50% {
+    color: #bfd6ff;
+  }
+  to {
+    color: #f0b7b4;
+  }
+}
+
+a.cpsharplink, a.cpsharplink:visited {
+  text-decoration: none;
+  @include animation-name(glowy);
+  @include animation-play-state(running);
+  @include animation(glowy);
+  @include animation-duration(5000ms);
+  @include animation-iteration-count(infinite);
+  @include animation-direction(alternate-reverse)
+}
+

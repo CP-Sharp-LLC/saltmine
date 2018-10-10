@@ -1,0 +1,500 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+@import "compass/css3/transform";
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+  width: 100%;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+}
+
+#logo {
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+.mainnav {
+
+  width: 70%;
+
+  .top-nav {
+
+    // @include background-image(linear-gradient(to right, rgba(64, 88, 128, 0.5), rgb(53, 12, 5), rgba(0, 20, 56, 0.5)));
+    background-color: $redish;
+    border-left: groove transparentize($blue, .5) 1px;
+    border-bottom: groove transparentize($blue, .5) 1px;
+    @include transform(skew(32deg, 0deg));
+
+    li {
+      @include transform(skew(-32deg, 0deg));
+      height: 100%;
+      float: left;
+
+      a {
+        display: block;
+        height: 100%;
+        line-height: 4vh;
+        font-family: "Oswald", sans-serif;
+        font-weight: 100;
+        color: $white;
+        letter-spacing: 0.2vw;
+        font-size: 1.2m;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 2vw;
+        //background-color: rgba(255,255,255,.1);
+        //background-color: transparentize($redish, .95);
+        //border: solid rgba(61, 81, 255, 0.2) 1px;
+        border-radius: 15px;
+
+        &:hover, &:active, &:focus {
+          color: $blackisher;
+          text-decoration: none;
+          text-outline: none;
+          outline: none;
+        }
+      }
+    }
+
+    height: 100%;
+    display: block;
+    margin: 0;
+  }
+}
+
+.nav {
+  border: 0;
+
+  ul {
+    background: $black;
+    margin-top: 0;
+  }
+  li {
+    float: left;
+    position: relative;
+
+    a {
+      border-bottom: 0;
+
+      /*
+      you can use hover styles here even though this size
+      has the possibility of being a mobile device.
+      */
+      &:hover, &:focus, &:active {
+        color: $white;
+        border-style: none;
+        text-outline: none;
+        text-decoration:none;
+        outline: none;
+      }
+    }
+
+    &:first-child {
+    }
+    &:last-child {
+    }
+
+    /*
+    plan your menus and drop-downs wisely.
+    */
+    ul.sub-menu,
+    ul.children {
+      margin-top: 0;
+      border: 1px solid #ccc;
+      border-top: 0;
+      position: absolute;
+      visibility: hidden;
+      z-index: 8999;
+
+      li {
+
+        a {
+          padding-left: 10px;
+          border-right: 0;
+          display: block;
+          width: 180px;
+          border-bottom: 1px solid #ccc;
+
+          &:hover,
+          &:focus {
+          }
+
+          &:link {
+          }
+        }
+
+        &:first-child {
+        }
+
+        &:last-child {
+
+          a {
+            border-bottom: 0;
+          }
+        }
+
+        ul {
+          top: 0;
+          left: 100%;
+        }
+      }
+
+      /* highlight sub-menu current page */
+      li.current-menu-item,
+      li.current_page_item,
+      li.current_page_ancestor {
+        a {
+        }
+      }
+    }
+
+    /* showing sub-menus */
+    &:hover > ul {
+      top: auto;
+      visibility: visible;
+    }
+
+  }
+  /* end .menu ul li */
+
+  /* highlight current page */
+  li.current-menu-item,
+  li.current_page_item,
+  li.current_page_ancestor {
+    a {
+    }
+  }
+  /* end current highlighters */
+
+}
+
+/* end .nav */
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {
+  margin-top: 2.2em;
+}
+
+.widgettitle {
+  border-bottom: 2px solid #444;
+  margin-bottom: 0.75em;
+}
+
+.widget {
+  padding: 0 10px;
+  margin: 2.2em 0;
+
+  ul {
+    li {
+      margin-bottom: 0.75em;
+
+      &:first-child {
+      }
+      &:last-child {
+      }
+      a {
+      }
+      /* deep nesting */
+
+      ul {
+        margin-top: 0.75em;
+        padding-left: 1em;
+      }
+    }
+  }
+}
+
+/* links widget */
+.widget_links {
+}
+
+.widget_links ul {
+}
+
+.widget_links ul li {
+}
+
+.widget_links ul li a {
+}
+
+/* meta widget */
+.widget_meta {
+}
+
+.widget_meta ul {
+}
+
+.widget_meta ul li {
+}
+
+.widget_meta ul li a {
+}
+
+/* pages widget */
+.widget_pages {
+}
+
+.widget_pages ul {
+}
+
+.widget_pages ul li {
+}
+
+.widget_pages ul li a {
+}
+
+/* recent-posts widget */
+.widget_recent_entries {
+}
+
+.widget_recent_entries ul {
+}
+
+.widget_recent_entries ul li {
+}
+
+.widget_recent_entries ul li a {
+}
+
+/* archives widget */
+.widget_archive {
+}
+
+.widget_archive ul {
+}
+
+.widget_archive ul li {
+}
+
+.widget_archive ul li a {
+}
+
+.widget_archive select {
+}
+
+.widget_archive option {
+}
+
+/* tag-cloud widget */
+.widget_links {
+}
+
+.widget_links li:after {
+}
+
+.widget_links li:before {
+}
+
+.widget_tag_cloud {
+}
+
+.widget_tag_cloud a {
+}
+
+.widget_tag_cloud a:after {
+}
+
+.widget_tag_cloud a:before {
+}
+
+/* calendar widget */
+.widget_calendar {
+}
+
+#calendar_wrap {
+}
+
+#calendar_wrap th {
+}
+
+#calendar_wrap td {
+}
+
+#wp-calendar tr td {
+}
+
+#wp-calendar caption {
+}
+
+#wp-calendar a {
+}
+
+#wp-calendar #today {
+}
+
+#wp-calendar #prev {
+}
+
+#wp-calendar #next {
+}
+
+#wp-calendar #next a {
+}
+
+#wp-calendar #prev a {
+}
+
+/* category widget */
+.widget_categories {
+}
+
+.widget_categories ul {
+}
+
+.widget_categories ul li {
+}
+
+.widget_categories ul ul.children {
+}
+
+.widget_categories a {
+}
+
+.widget_categories select {
+}
+
+.widget_categories select#cat {
+}
+
+.widget_categories select.postform {
+}
+
+.widget_categories option {
+}
+
+.widget_categories .level-0 {
+}
+
+.widget_categories .level-1 {
+}
+
+.widget_categories .level-2 {
+}
+
+.widget_categories .level-3 {
+}
+
+/* recent-comments widget */
+.recentcomments {
+}
+
+#recentcomments {
+}
+
+#recentcomments li {
+}
+
+#recentcomments li a {
+}
+
+.widget_recent_comments {
+}
+
+/* search widget */
+#searchform {
+}
+
+.widget_search {
+}
+
+.screen-reader-text {
+}
+
+/* text widget */
+.textwidget {
+}
+
+.widget_text {
+}
+
+.textwidget p {
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+.footer-links {
+  ul {
+    li {
+      a {
+        &:hover {
+        }
+      }
+      /*
+      be careful with the depth of your menus.
+      it's very rare to have multi-depth menus in
+      the footer.
+      */
+      ul {
+      }
+    }
+  }
+}
+
+/* end .footer-links */
+
+
+.mainheader {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  height: 4vh;
+  // margin-top: 1vh;
+
+  #inner-header {
+    height: 100%;
+
+    #logo {
+      float: left;
+      padding-top: 1vh;
+      width: 18%;
+      text-align: right;
+      margin-right: 12%;
+
+      img {
+        max-height: 3vh;
+        max-width: 17vw;
+      }
+    }
+  }
+}
+
+.top-nav  {
+  padding-left: 1.5vw;
+}

@@ -1,0 +1,146 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+@import "compass/css3/transform";
+
+/*********************
+GENERAL STYLES
+*********************/
+$navheight: 92px;
+
+.how-list{
+  padding-right: 0vw;
+  margin: 10vh 2%;
+}
+
+.mainheader {
+  height: $navheight;
+  border-bottom: solid 1px rgb(200, 200, 200);
+}
+
+#content {
+  margint-top: $navheight;
+}
+
+.mainnav {
+  li {
+    a {
+      line-height: $navheight;
+      padding: 0 2vw;
+    }
+  }
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+  width: 100%;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+#logo {
+  a {
+    padding: 28px;
+  }
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+.mainnav {
+  .top-nav {
+    display: block;
+    height: 100%;
+  }
+}
+
+.nav {
+  border: 0;
+
+  li {
+    float: left;
+    height: 100%;
+
+    a {
+      font-size: 0.9em;
+      margin: 0 0 0 2vw;
+      font-weight: 500;
+      /*
+      you can use hover styles here even though this size
+      has the possibility of being a mobile device.
+      */
+      &:hover, &:focus, &:active {
+        border-style: none;
+        text-outline: none;
+        text-decoration: none;
+        outline: none;
+      }
+    }
+
+    /*
+    plan your menus and drop-downs wisely.
+    */
+    ul.sub-menu,
+    ul.children {
+      margin-top: 0;
+      border: 1px solid #ccc;
+      border-top: 0;
+      position: absolute;
+      visibility: hidden;
+      z-index: 8999;
+
+      li {
+
+        a {
+          padding-left: 10px;
+          border-right: 0;
+          display: block;
+          width: 180px;
+          border-bottom: 1px solid #ccc;
+
+        }
+
+        &:last-child {
+
+          a {
+            border-bottom: 0;
+          }
+        }
+
+        ul {
+          top: 0;
+          left: 100%;
+        }
+      }
+    }
+
+    /* showing sub-menus */
+    &:hover > ul {
+      top: auto;
+      visibility: visible;
+    }
+  }
+}
+
+.md-almost-full-height {
+  max-height: 100vh;
+}
+
+h2.slim-emphasis {
+  font-size: 3em;
+}

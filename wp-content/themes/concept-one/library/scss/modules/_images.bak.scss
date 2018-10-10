@@ -1,0 +1,99 @@
+// @media only screen and (min-width: 768px) {
+
+.grayer {
+  background-color: rgba(245, 245, 245, 1);
+  transform: scale(1);
+  color: black;
+}
+
+.sm-collapse-up, .sm-collapse-take {
+  .grayer {
+    background-color: rgba(0, 0, 0, 0.45);
+    transform: scale(0.7);
+    // min-height: 75vw;
+    transform-origin: bottom left;
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.bright {
+  background-color: rgba(255, 255, 255, .90);
+}
+
+.diamond-hinge {
+  transform: scale(1);
+  position: relative;
+  left: 9vw;
+}
+
+.fl-photo-crop-portrait div img {
+  margin-bottom: 0;
+}
+
+.sm-backdrop {
+  position: absolute;
+  z-index: -100;
+  min-height: 100vh;
+  min-width: 100vw;
+  top: 0;
+  filter: brightness(.5);
+  div {
+    height: 100vh;
+  }
+}
+
+.sm-foredrop {
+  z-index: 0;
+  position: relative;
+  &.fl-col-small.min-third-high {
+    max-width: 100vw;
+  }
+}
+
+.third-square {
+  max-height: 100vw;
+  max-width: 100vw;
+  min-width: 100vw;
+  min-height: 100vw;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .sm-collapse-up, .sm-collapse-take {
+    .grayer {
+      background-color: rgba(245, 245, 245, 1);
+      transform: scale(1);
+      color: black;
+    }
+  }
+
+  .third-square {
+    max-height: 33vw;
+    max-width: 33vw;
+    min-height: 33vw;
+    min-width: 33vw;
+  }
+
+  .sm-backdrop {
+    position: relative;
+    z-index: -1;
+    min-height: auto;
+    min-width: auto;
+    top: auto;
+    filter: brightness(1);
+    div {
+      height: auto;
+    }
+  }
+
+  .bright {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .sm-foredrop {
+    z-index: auto;
+    position: relative;
+  }
+}

@@ -1,0 +1,121 @@
+// CP's chees_navbar.scssy navbar stuff.
+.slant-header {
+  @include transform(skew(0deg, 12deg) translateY(-12vh));
+  background-color: $redish;
+  height: 16vh;
+  margin-bottom: -10vh;
+
+  //noinspection ALL
+  #inner-header {
+    @include transform(skew(0deg, -12deg) translateY(14vh));
+  }
+}
+
+.mainheader {
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  height: 5vh;
+  // margin-top: 1vh;
+  z-index: 1050;
+
+  #inner-header {
+    height: 100%;
+
+    #logo {
+      float: left;
+      padding-top: 1vh;
+      width: 18%;
+      text-align: right;
+      margin-right: 4%;
+
+      img {
+        max-height: 3vh;
+        max-width: 40vw;
+      }
+    }
+  }
+}
+
+.mainnav {
+  border-bottom: 0;
+  margin: 0;
+  float: left;
+  height: 100%;
+
+  #menu-main-menu {
+    display: none;
+  }
+
+  li {
+
+    a {
+
+      /*
+      remember this is for mobile ONLY, so there's no need
+      to even declare hover styles here, you can do it in
+      the style.scss file where it's relevant. We want to
+      keep this file as small as possible!
+      */
+      &:hover, &:focus {
+
+      }
+    }
+
+    &:first-child {
+    }
+
+    &:last-child {
+    }
+
+    /*
+    so you really have to rethink your dropdowns for mobile.
+    you don't want to have it expand too much because the
+    screen is so small. How you manage your menu should
+    depend on the project. Here's some great info on it:
+    http://www.alistapart.com/articles/organizing-mobile/
+    */
+
+    ul.sub-menu,
+    ul.children {
+
+      li {
+
+        a {
+          padding-left: 30px;
+
+          &:hover,
+          &:focus {
+          }
+
+          &:link {
+          }
+
+        }
+
+        &:first-child {
+        }
+
+        &:last-child {
+        }
+
+      }
+
+    }
+
+  }
+  /* end .menu li */
+
+  /* highlight current page */
+  li.current-menu-item,
+  li.current_page_item,
+  li.current_page_ancestor {
+
+    a {
+    }
+
+  }
+  /* end current highlighters */
+
+}

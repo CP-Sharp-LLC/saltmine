@@ -6,7 +6,6 @@ Stylesheet: Typography
 
 ******************************************************************/
 @import "compass/css3/hyphenation";
-@import "../fonts/fonts.css";
 
 @mixin font-feature-settings($feature-list: false) {
   // Only proceed if a list of arguments was passed
@@ -36,7 +35,7 @@ Stylesheet: Typography
 // font stacks
 $sans-serif: "Graphik Web", Arial, sans-serif;
 $serif: "Graphik XXCond Web", serif;
-$cyan: rgb(0, 255, 255);
+$cyan: rgb(0, 209, 180);
 
 .blacklight {
   color: $cyan;
@@ -143,7 +142,7 @@ h2.anton-emphasis {
       height: 6vw;
       text-align: center;
       line-height: 6.9vw;
-      background: rgb(0, 255, 255);
+      background: $cyan;
       transform: rotate(45deg);
       margin-top: -1vh;
     }
@@ -319,7 +318,7 @@ p {
 
 button.underline {
   background: rgba(0, 0, 0, 0);
-  border: 0 solid rgb(0, 255, 255);
+  border: 0 solid $cyan;
   border-bottom-width: 5px;
   text-transform: uppercase;
   padding-bottom: 0.5em;
@@ -327,8 +326,8 @@ button.underline {
 }
 
 li a[href="#request-demo"], button.filled, input[type="submit"] {
-  background: rgba(0, 255, 255, 1);
-  border: 0 solid rgb(0, 255, 255);
+  background: $cyan;
+  border: 0 solid $cyan;
   text-transform: uppercase;
 }
 

@@ -867,7 +867,7 @@ button.underline {
 }
 
 /* line 328, ../scss/partials/_typography.scss */
-li a[href="#request-demo"], button.filled, input[type="submit"] {
+li a[href="#request-demo"], li.filled, button.filled, input[type="submit"] {
   background: #00d1b4;
   border: 0 solid #00d1b4;
   text-transform: uppercase;
@@ -1849,7 +1849,7 @@ button.underline {
 }
 
 /* line 328, ../scss/partials/_typography.scss */
-li a[href="#request-demo"], button.filled, input[type="submit"] {
+li a[href="#request-demo"], li.filled, button.filled, input[type="submit"] {
   background: #00d1b4;
   border: 0 solid #00d1b4;
   text-transform: uppercase;
@@ -2483,7 +2483,7 @@ button.underline {
 }
 
 /* line 328, ../scss/partials/_typography.scss */
-li a[href="#request-demo"], button.filled, input[type="submit"] {
+li a[href="#request-demo"], li.filled, button.filled, input[type="submit"] {
   background: #00d1b4;
   border: 0 solid #00d1b4;
   text-transform: uppercase;
@@ -3318,7 +3318,7 @@ you can add resource intensive styles.
   /* line 37, ../scss/breakpoints/_768up.scss */
   .mainnav li a {
     line-height: 92px;
-    padding: 0 2vw;
+    padding: 0 1vw;
   }
 
   /*********************

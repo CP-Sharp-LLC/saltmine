@@ -885,7 +885,7 @@ body#tinymce.wp-editor button.underline {
   font-weight: 600;
 }
 /* line 328, ../scss/partials/_typography.scss */
-body#tinymce.wp-editor li a[href="#request-demo"], body#tinymce.wp-editor button.filled, body#tinymce.wp-editor input[type="submit"] {
+body#tinymce.wp-editor li a[href="#request-demo"], body#tinymce.wp-editor li.filled, body#tinymce.wp-editor button.filled, body#tinymce.wp-editor input[type="submit"] {
   background: #00d1b4;
   border: 0 solid #00d1b4;
   text-transform: uppercase;

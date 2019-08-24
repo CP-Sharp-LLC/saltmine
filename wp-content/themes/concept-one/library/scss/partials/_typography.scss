@@ -325,7 +325,7 @@ button.underline {
   font-weight: 600;
 }
 
-li a[href="#request-demo"], button.filled, input[type="submit"] {
+li a[href="#request-demo"], li.filled, button.filled, input[type="submit"] {
   background: $cyan;
   border: 0 solid $cyan;
   text-transform: uppercase;

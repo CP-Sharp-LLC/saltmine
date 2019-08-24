@@ -9,20 +9,24 @@ $navheight: 45px;
   top: 0;
   height: $navheight;
   z-index: 1050;
+
   #inner-header {
     height: 100%;
   }
 }
 
-#content{
+#content {
   margin-top: $navheight;
+}
 
+div#logo {
+  float: inherit;
+  text-align: center;
 }
 
 #logo {
-  float: left;
-  text-align: right;
   height: 100%;
+
   a {
     margin: 0 0;
     display: inline-block;
@@ -33,6 +37,26 @@ $navheight: 45px;
       max-height: 100%;
     }
   }
+}
+
+nav.mainnav {
+  float: inherit;
+  width: 100%;
+}
+
+ul#menu-concept-menu {
+  float: inherit;
+  display: block;
+  width: 100%;
+  background: white;
+}
+
+nav.mainnav {
+  text-align: center;
+}
+
+.nav.top-nav li.menu-item {
+  float: inherit;
 }
 
 .mainnav {
@@ -49,6 +73,9 @@ $navheight: 45px;
   }
 
   li {
+    float: inherit;
+    display: inline-block;
+
     a {
       border-bottom: 0;
       display: inline-block;
@@ -58,6 +85,7 @@ $navheight: 45px;
       color: black;
       text-transform: uppercase;
       padding: 0 8px;
+
       &:hover, &:focus {
 
       }

@@ -1864,49 +1864,82 @@ li a[href="#request-demo"], li.filled, button.filled, input[type="submit"] {
   height: 45px;
   z-index: 1050;
 }
-/* line 12, ../scss/modules/_navbar.scss */
+/* line 13, ../scss/modules/_navbar.scss */
 .mainheader #inner-header {
   height: 100%;
 }
 
-/* line 17, ../scss/modules/_navbar.scss */
+/* line 18, ../scss/modules/_navbar.scss */
 #content {
   margin-top: 45px;
 }
 
 /* line 22, ../scss/modules/_navbar.scss */
+div#logo {
+  float: inherit;
+  text-align: center;
+}
+
+/* line 27, ../scss/modules/_navbar.scss */
 #logo {
-  float: left;
-  text-align: right;
   height: 100%;
 }
-/* line 26, ../scss/modules/_navbar.scss */
+/* line 30, ../scss/modules/_navbar.scss */
 #logo a {
   margin: 0 0;
   display: inline-block;
   height: 100%;
   padding: 3vw;
 }
-/* line 32, ../scss/modules/_navbar.scss */
+/* line 36, ../scss/modules/_navbar.scss */
 #logo a img {
   max-height: 100%;
 }
 
-/* line 38, ../scss/modules/_navbar.scss */
+/* line 42, ../scss/modules/_navbar.scss */
+nav.mainnav {
+  float: inherit;
+  width: 100%;
+}
+
+/* line 47, ../scss/modules/_navbar.scss */
+ul#menu-concept-menu {
+  float: inherit;
+  display: block;
+  width: 100%;
+  background: white;
+}
+
+/* line 54, ../scss/modules/_navbar.scss */
+nav.mainnav {
+  text-align: center;
+}
+
+/* line 58, ../scss/modules/_navbar.scss */
+.nav.top-nav li.menu-item {
+  float: inherit;
+}
+
+/* line 62, ../scss/modules/_navbar.scss */
 .mainnav {
   border-bottom: 0;
   margin: 0;
   float: right;
   height: 100%;
 }
-/* line 44, ../scss/modules/_navbar.scss */
+/* line 68, ../scss/modules/_navbar.scss */
 .mainnav .top-nav {
   float: right;
   margin-top: 0;
   margin-bottom: 0;
   height: 100%;
 }
-/* line 52, ../scss/modules/_navbar.scss */
+/* line 75, ../scss/modules/_navbar.scss */
+.mainnav li {
+  float: inherit;
+  display: inline-block;
+}
+/* line 79, ../scss/modules/_navbar.scss */
 .mainnav li a {
   border-bottom: 0;
   display: inline-block;
@@ -1917,27 +1950,27 @@ li a[href="#request-demo"], li.filled, button.filled, input[type="submit"] {
   text-transform: uppercase;
   padding: 0 8px;
 }
-/* line 69, ../scss/modules/_navbar.scss */
+/* line 97, ../scss/modules/_navbar.scss */
 .mainnav li ul.sub-menu li a,
 .mainnav li ul.children li a {
   padding-left: 30px;
 }
 
-/* line 77, ../scss/modules/_navbar.scss */
+/* line 105, ../scss/modules/_navbar.scss */
 .nav {
   border: 0;
 }
-/* line 80, ../scss/modules/_navbar.scss */
+/* line 108, ../scss/modules/_navbar.scss */
 .nav li {
   float: left;
   height: 100%;
 }
-/* line 84, ../scss/modules/_navbar.scss */
+/* line 112, ../scss/modules/_navbar.scss */
 .nav li a {
   font-size: 0.7em;
   font-weight: 500;
 }
-/* line 88, ../scss/modules/_navbar.scss */
+/* line 116, ../scss/modules/_navbar.scss */
 .nav li a:hover, .nav li a:focus, .nav li a:active {
   border-style: none;
   text-outline: none;
@@ -3200,7 +3233,29 @@ tweeners.
     padding: 21px;
   }
 
-  /* line 45, ../scss/breakpoints/_481up.scss */
+  /* line 43, ../scss/breakpoints/_481up.scss */
+  ul#menu-concept-menu {
+    background: white;
+  }
+
+  /* line 47, ../scss/breakpoints/_481up.scss */
+  div#logo {
+    float: inherit;
+  }
+
+  /* line 51, ../scss/breakpoints/_481up.scss */
+  nav.mainnav {
+    width: 100%;
+    text-align: right;
+  }
+
+  /* line 56, ../scss/breakpoints/_481up.scss */
+  #menu-concept-menu.nav li {
+    float: inherit;
+    display: inline-block;
+  }
+
+  /* line 63, ../scss/breakpoints/_481up.scss */
   .mainnav li a {
     font-size: .9em;
     line-height: 75px;
@@ -3208,23 +3263,23 @@ tweeners.
   }
 
   /* .menu is clearfixed inside mixins.scss */
-  /* line 61, ../scss/breakpoints/_481up.scss */
+  /* line 79, ../scss/breakpoints/_481up.scss */
   .menu {
     /* end .menu ul */
   }
-  /* line 62, ../scss/breakpoints/_481up.scss */
+  /* line 80, ../scss/breakpoints/_481up.scss */
   .menu ul {
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 63, ../scss/breakpoints/_481up.scss */
+  /* line 81, ../scss/breakpoints/_481up.scss */
   .menu ul li {
     /*
     plan your menus and drop-downs wisely.
     */
   }
-  /* line 64, ../scss/breakpoints/_481up.scss */
+  /* line 82, ../scss/breakpoints/_481up.scss */
   .menu ul li a {
     /*
     you can use hover styles here even though this size
@@ -3237,23 +3292,23 @@ tweeners.
   POSTS & CONTENT STYLES
   *********************/
   /* entry content */
-  /* line 120, ../scss/breakpoints/_481up.scss */
+  /* line 138, ../scss/breakpoints/_481up.scss */
   .entry-content {
     /* at this larger size, we can start to align images */
   }
-  /* line 123, ../scss/breakpoints/_481up.scss */
+  /* line 141, ../scss/breakpoints/_481up.scss */
   .entry-content .alignleft, .entry-content img.alignleft {
     margin-right: 1.5em;
     display: inline;
     float: left;
   }
-  /* line 128, ../scss/breakpoints/_481up.scss */
+  /* line 146, ../scss/breakpoints/_481up.scss */
   .entry-content .alignright, .entry-content img.alignright {
     margin-left: 1.5em;
     display: inline;
     float: right;
   }
-  /* line 133, ../scss/breakpoints/_481up.scss */
+  /* line 151, ../scss/breakpoints/_481up.scss */
   .entry-content .aligncenter, .entry-content img.aligncenter {
     margin-right: auto;
     margin-left: auto;
@@ -3270,7 +3325,7 @@ tweeners.
   do they need tweaking?
   */
   /* end .footer-links */
-  /* line 162, ../scss/breakpoints/_481up.scss */
+  /* line 180, ../scss/breakpoints/_481up.scss */
   .no-surprise h2 {
     font-size: 8em;
   }
@@ -3300,7 +3355,7 @@ you can add resource intensive styles.
   *********************/
   /* line 21, ../scss/breakpoints/_768up.scss */
   .how-list {
-    padding-right: 0vw;
+    padding-right: 0;
     margin: 10vh 2%;
   }
 
@@ -3312,7 +3367,7 @@ you can add resource intensive styles.
 
   /* line 31, ../scss/breakpoints/_768up.scss */
   #content {
-    margint-top: 92px;
+    margin-top: 92px;
   }
 
   /* line 37, ../scss/breakpoints/_768up.scss */
@@ -3332,25 +3387,35 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
-  /* line 57, ../scss/breakpoints/_768up.scss */
-  #logo a {
+  /* line 56, ../scss/breakpoints/_768up.scss */
+  div#logo {
+    float: left;
+    width: auto;
+    text-align: right;
+  }
+  /* line 60, ../scss/breakpoints/_768up.scss */
+  div#logo a {
     padding: 28px;
   }
 
   /*********************
   NAVIGATION STYLES
   *********************/
-  /* line 66, ../scss/breakpoints/_768up.scss */
+  /* line 68, ../scss/breakpoints/_768up.scss */
+  .mainnav {
+    width: 100%;
+  }
+  /* line 70, ../scss/breakpoints/_768up.scss */
   .mainnav .top-nav {
     display: block;
     height: 100%;
   }
 
-  /* line 72, ../scss/breakpoints/_768up.scss */
+  /* line 77, ../scss/breakpoints/_768up.scss */
   .nav {
     border: 0;
   }
-  /* line 75, ../scss/breakpoints/_768up.scss */
+  /* line 80, ../scss/breakpoints/_768up.scss */
   .nav li {
     float: left;
     height: 100%;
@@ -3359,24 +3424,24 @@ you can add resource intensive styles.
     */
     /* showing sub-menus */
   }
-  /* line 79, ../scss/breakpoints/_768up.scss */
+  /* line 84, ../scss/breakpoints/_768up.scss */
   .nav li a {
     font-size: 0.9em;
-    margin: 0 0 0 2vw;
+    /* margin: 0 0 0 2vw;*/
     font-weight: 500;
     /*
     you can use hover styles here even though this size
     has the possibility of being a mobile device.
     */
   }
-  /* line 87, ../scss/breakpoints/_768up.scss */
+  /* line 92, ../scss/breakpoints/_768up.scss */
   .nav li a:hover, .nav li a:focus, .nav li a:active {
     border-style: none;
     text-outline: none;
     text-decoration: none;
     outline: none;
   }
-  /* line 98, ../scss/breakpoints/_768up.scss */
+  /* line 103, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
@@ -3386,7 +3451,7 @@ you can add resource intensive styles.
     visibility: hidden;
     z-index: 8999;
   }
-  /* line 109, ../scss/breakpoints/_768up.scss */
+  /* line 114, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li a,
   .nav li ul.children li a {
     padding-left: 10px;
@@ -3395,29 +3460,29 @@ you can add resource intensive styles.
     width: 180px;
     border-bottom: 1px solid #ccc;
   }
-  /* line 120, ../scss/breakpoints/_768up.scss */
+  /* line 125, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
     border-bottom: 0;
   }
-  /* line 125, ../scss/breakpoints/_768up.scss */
+  /* line 130, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li ul,
   .nav li ul.children li ul {
     top: 0;
     left: 100%;
   }
-  /* line 133, ../scss/breakpoints/_768up.scss */
+  /* line 138, ../scss/breakpoints/_768up.scss */
   .nav li:hover > ul {
     top: auto;
     visibility: visible;
   }
 
-  /* line 140, ../scss/breakpoints/_768up.scss */
+  /* line 145, ../scss/breakpoints/_768up.scss */
   .md-almost-full-height {
     max-height: 100vh;
   }
 
-  /* line 144, ../scss/breakpoints/_768up.scss */
+  /* line 149, ../scss/breakpoints/_768up.scss */
   h2.slim-emphasis {
     font-size: 3em;
   }

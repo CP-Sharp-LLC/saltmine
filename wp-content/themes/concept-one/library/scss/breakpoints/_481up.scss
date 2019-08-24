@@ -40,6 +40,24 @@ $navheight: 75px;
   padding: 21px;
 }
 
+ul#menu-concept-menu {
+  background:white;
+}
+
+div#logo {
+  float: inherit;
+}
+
+nav.mainnav {
+  width: 100%;
+  text-align: right;
+}
+
+#menu-concept-menu.nav li {
+  float: inherit;
+  display: inline-block;
+}
+
 .mainnav {
   li {
     a {

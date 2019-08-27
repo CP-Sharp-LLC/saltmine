@@ -3848,5 +3848,9 @@ be set to display none.
     display: none;
   }
 }
+/* line 141, ../scss/style.scss */
+.grecaptcha-badge {
+  visibility: hidden;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
 <div id="container">
-
+    <div id="loginbar" class="loginbar"><span class="loginlink"><a href="https://app.saltmine.com/">LOGIN</a></span></div>
     <header class="header mainheader" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
         <div id="inner-header" class="wrap cf">

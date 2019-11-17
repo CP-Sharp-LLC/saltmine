@@ -1855,54 +1855,91 @@ li a[href="#request-demo"], li.filled, button.filled, input[type="submit"] {
   text-transform: uppercase;
 }
 
-/* line 5, ../scss/modules/_navbar.scss */
+/* line 6, ../scss/modules/_navbar.scss */
+.loginbar {
+  position: absolute;
+  z-index: 1051;
+  background-color: black;
+  top: 0;
+  width: 100%;
+  text-align: right;
+  padding: 0px 2em;
+  margin: 0;
+  height: 26px;
+  line-height: 26px;
+}
+/* line 19, ../scss/modules/_navbar.scss */
+.loginbar .loginlink a {
+  background: url(../images/loginicon.png) no-repeat center left;
+  /* make sure to replace this! */
+  background-size: contain;
+  padding-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* line 28, ../scss/modules/_navbar.scss */
+.loginbar .loginlink:hover {
+  -webkit-filter: drop-shadow(0px 0px 4px white);
+  filter: drop-shadow(0px 0px 4px white);
+}
+
+/* line 34, ../scss/modules/_navbar.scss */
 .mainheader {
   background: white;
   position: fixed;
   width: 100vw;
-  top: 0;
+  top: 26px;
   height: 45px;
   z-index: 1050;
+  -moz-transition: all 100ms ease-in;
+  -o-transition: all 100ms ease-in;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
 }
-/* line 13, ../scss/modules/_navbar.scss */
+/* line 43, ../scss/modules/_navbar.scss */
+.mainheader.scrolled {
+  top: 0;
+}
+/* line 47, ../scss/modules/_navbar.scss */
 .mainheader #inner-header {
   height: 100%;
 }
 
-/* line 18, ../scss/modules/_navbar.scss */
+/* line 52, ../scss/modules/_navbar.scss */
 #content {
   margin-top: 45px;
 }
 
-/* line 22, ../scss/modules/_navbar.scss */
+/* line 56, ../scss/modules/_navbar.scss */
 div#logo {
   float: inherit;
   text-align: center;
 }
 
-/* line 27, ../scss/modules/_navbar.scss */
+/* line 61, ../scss/modules/_navbar.scss */
 #logo {
   height: 100%;
 }
-/* line 30, ../scss/modules/_navbar.scss */
+/* line 64, ../scss/modules/_navbar.scss */
 #logo a {
   margin: 0 0;
   display: inline-block;
   height: 100%;
   padding: 3vw;
 }
-/* line 36, ../scss/modules/_navbar.scss */
+/* line 70, ../scss/modules/_navbar.scss */
 #logo a img {
   max-height: 100%;
 }
 
-/* line 42, ../scss/modules/_navbar.scss */
+/* line 76, ../scss/modules/_navbar.scss */
 nav.mainnav {
   float: inherit;
   width: 100%;
 }
 
-/* line 47, ../scss/modules/_navbar.scss */
+/* line 81, ../scss/modules/_navbar.scss */
 ul#menu-concept-menu {
   float: inherit;
   display: block;
@@ -1910,36 +1947,36 @@ ul#menu-concept-menu {
   background: white;
 }
 
-/* line 54, ../scss/modules/_navbar.scss */
+/* line 88, ../scss/modules/_navbar.scss */
 nav.mainnav {
   text-align: center;
 }
 
-/* line 58, ../scss/modules/_navbar.scss */
+/* line 92, ../scss/modules/_navbar.scss */
 .nav.top-nav li.menu-item {
   float: inherit;
 }
 
-/* line 62, ../scss/modules/_navbar.scss */
+/* line 96, ../scss/modules/_navbar.scss */
 .mainnav {
   border-bottom: 0;
   margin: 0;
   float: right;
   height: 100%;
 }
-/* line 68, ../scss/modules/_navbar.scss */
+/* line 102, ../scss/modules/_navbar.scss */
 .mainnav .top-nav {
   float: right;
   margin-top: 0;
   margin-bottom: 0;
   height: 100%;
 }
-/* line 75, ../scss/modules/_navbar.scss */
+/* line 109, ../scss/modules/_navbar.scss */
 .mainnav li {
   float: inherit;
   display: inline-block;
 }
-/* line 79, ../scss/modules/_navbar.scss */
+/* line 113, ../scss/modules/_navbar.scss */
 .mainnav li a {
   border-bottom: 0;
   display: inline-block;
@@ -1950,27 +1987,27 @@ nav.mainnav {
   text-transform: uppercase;
   padding: 0 8px;
 }
-/* line 97, ../scss/modules/_navbar.scss */
+/* line 130, ../scss/modules/_navbar.scss */
 .mainnav li ul.sub-menu li a,
 .mainnav li ul.children li a {
   padding-left: 30px;
 }
 
-/* line 105, ../scss/modules/_navbar.scss */
+/* line 138, ../scss/modules/_navbar.scss */
 .nav {
   border: 0;
 }
-/* line 108, ../scss/modules/_navbar.scss */
+/* line 141, ../scss/modules/_navbar.scss */
 .nav li {
   float: left;
   height: 100%;
 }
-/* line 112, ../scss/modules/_navbar.scss */
+/* line 145, ../scss/modules/_navbar.scss */
 .nav li a {
   font-size: 0.7em;
   font-weight: 500;
 }
-/* line 116, ../scss/modules/_navbar.scss */
+/* line 149, ../scss/modules/_navbar.scss */
 .nav li a:hover, .nav li a:focus, .nav li a:active {
   border-style: none;
   text-outline: none;

@@ -1857,7 +1857,6 @@ li a[href="#request-demo"], li.filled, button.filled, input[type="submit"] {
 
 /* line 6, ../scss/modules/_navbar.scss */
 .loginbar {
-  position: absolute;
   z-index: 1051;
   background-color: black;
   top: 0;
